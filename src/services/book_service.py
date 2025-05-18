@@ -1,6 +1,6 @@
 from typing import List
 
-from fastapi_simple_project.domain.book import Book
+from domain.book import Book
 
 
 class BookService:

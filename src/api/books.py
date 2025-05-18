@@ -1,6 +1,6 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import APIRouter
 
-from fastapi_simple_project.services.book_service import BookService
+from services.book_service import BookService
 
 router = APIRouter()
 book_service = BookService()
