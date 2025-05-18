@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+.env
+.env.*
+
+# Poetry
+poetry.lock
+
+# Byte-compiled / cache
+*.log
+*.pot
+*.mo
+*.sqlite3
+*.db
+*.sqlite
+
+# Pytest cache
+.cache/
+.coverage
+htmlcov/
+pytestdebug.log
+
+# MyPy
+.mypy_cache/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test results
+*.pytest_cache
+
+# Local dev scripts or secret files (optional)
+local_settings.py
+secrets/
