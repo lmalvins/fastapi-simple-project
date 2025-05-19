@@ -1,6 +1,6 @@
 from typing import List
 
-from domain.book import Book
+from src.domain.book import Book
 
 
 class BookService:
