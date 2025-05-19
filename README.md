@@ -1,10 +1,10 @@
-# 🚀 FastAPI Simple Project
+# FastAPI Simple Project
 
 A lightweight, modular FastAPI project using **Poetry** and a **Hexagonal Architecture** approach for clean separation of concerns.
 
 ---
 
-## 📦 Features
+##  Features
 
 - FastAPI as the web framework
 - Hexagonal architecture (domain, application, infrastructure layers)
@@ -14,7 +14,7 @@ A lightweight, modular FastAPI project using **Poetry** and a **Hexagonal Archit
 
 ---
 
-## ✅ Pre-requisites
+##  Pre-requisites
 
 Before getting started, make sure you have:
 
