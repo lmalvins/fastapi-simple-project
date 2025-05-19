@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from services.book_service import BookService
+from src.services.book_service import BookService
 
 router = APIRouter()
 book_service = BookService()
