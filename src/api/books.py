@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, Body
 
+from domain.book import Book
 from src.services.book_service import BookService
 
 router = APIRouter()
@@ -33,7 +34,8 @@ def get_books_by_category_author(category: str, book_author: str):
     return book_list
 
 @router.post("/books")
-def post_books(new_book=Body()):
+def post_books(book_request_body: Book):
+    new_book=Book(**book_request_body.model_dump())
     book_service.add_book(new_book)
 
 @router.put("/books")
