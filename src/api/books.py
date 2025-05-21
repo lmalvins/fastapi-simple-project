@@ -35,3 +35,9 @@ def get_books_by_category_author(category: str, book_author: str):
 @router.post("/books")
 def post_books(new_book=Body()):
     book_service.add_book(new_book)
+
+@router.put("/books")
+def put_books(updated_book=Body()):
+    for i in range (len(book_service.get_books())):
+        if book_service.get_books()[i].title.casefold() == updated_book.get('title').casefold():
+            book_service.get_books()[i] = updated_book
