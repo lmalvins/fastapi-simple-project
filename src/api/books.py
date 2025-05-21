@@ -16,6 +16,14 @@ def get_books_by_title(book_title: str):
             return book
     raise HTTPException(status_code=404, detail="Book not found")
 
+@router.get("/books/")
+def get_books_by_category(category: str):
+    book_list = []
+    for book in book_service.get_books():
+        if book.category.casefold() == category.casefold():
+            book_list.append(book)
+    return book_list
+
 @router.get("/books/{book_author}/")
 def get_books_by_category_author(category: str, book_author: str):
     book_list = []
