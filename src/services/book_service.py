@@ -10,4 +10,5 @@ class BookService:
             Book(title="Title Two", author="Author Two", category="Fiction"),
             Book(title="Title Three", author="Author Three", category="Adventure"),
             Book(title="Title Four", author="Author Four", category="Terror"),
+            Book(title="Title Five", author="Author Five", category="Terror"),
         ]
