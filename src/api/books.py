@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Body
 
 from src.services.book_service import BookService
 
@@ -31,3 +31,7 @@ def get_books_by_category_author(category: str, book_author: str):
         if book.category.casefold() == category.casefold() and book.author.casefold() == book_author.casefold():
             book_list.append(book)
     return book_list
+
+@router.post("/books")
+def post_books(new_book=Body()):
+    book_service.add_book(new_book)
